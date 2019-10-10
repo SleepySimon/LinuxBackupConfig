@@ -1,0 +1,262 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintfull
+
+!! set font-family
+*.font: xft:Hack:style=Regular:size=12
+*.boldFont: xft:Hack:style=Bold:size=12
+*.italicFont: xft:Hack:style=Italic:size=12
+*.boldItalicFont: xft:Hack:style=Bold Italic:size=12
+
+!!color schemes
+
+# define fg          #BCBCBC
+# define bg          #262626
+# define cc          #afbfbf
+
+!! black
+!# define col0       #263640
+!# define col8       #4a697d
+!
+!! red
+!# define col1       #d12f2c
+!# define col9       #fa3935
+!
+!! green
+!# define col2       #819400
+!# define col10      #a4bd00
+!
+!! yellow
+!# define col3       #b08500
+!# define col11      #d9a400
+!
+!! blue
+!# define col4       #2587cc
+!# define col12      #2ca2f5
+!
+!! magenta
+!# define col5       #696ebf
+!# define col13      #8086e8
+!
+!! cyan
+!# define col6       #289c93
+!# define col14      #33c5ba
+!
+!! white
+!# define col7       #bfbaac
+!# define col15      #fdf6e3
+
+
+!!Dracula
+!# define col0       #000000
+!# define col8       #4D4D4D
+!# define col1       #FF5555
+!# define col9       #FF6E67
+!# define col2       #50FA7B
+!# define col10      #5AF78E
+!# define col3       #F1FA8C
+!# define col11      #F4F99D
+!# define col4       #BD93F9
+!# define col12      #CAA9FA
+!# define col5       #FF79C6
+!# define col13      #FF92D0
+!# define col6       #8BE9FD
+!# define col14      #9AEDFE
+!# define col7       #BFBFBF
+!# define col15      #E6E6E6
+
+
+!!gruvbox-light
+!# define col0       #fbf1c7
+!# define col8       #928374
+!# define col1       #cc241d
+!# define col9       #9d0006
+!# define col2       #98971a
+!# define col10      #797400
+!# define col3       #d79921
+!# define col11      #b57614
+!# define col4       #458588
+!# define col12      #076678
+!# define col5       #b16286
+!# define col13      #8f3f71
+!# define col6       #689d6a
+!# define col14      #427b58
+!# define col7       #7c6f64
+!# define col15      #3c3836
+
+
+!!gruvbox-dark
+!# define col0       #1D2021 
+!# define col8       #928374  
+!# define col1       #CC241D
+!# define col9       #FB4934
+!# define col2       #98971A 
+!# define col10      #B8BB26 
+!# define col3       #D79921 
+!# define col11      #FABD2F 
+!# define col4       #458588 
+!# define col12      #83A598 
+!# define col5       #B16286 
+!# define col13      #D3869B  
+!# define col6       #689D6A 
+!# define col14      #8EC07C 
+!# define col7       #A89984 
+!# define col15      #EBDBB2 
+
+
+!!Apprentice
+!# define fg         #BCBCBC
+!# define bg         #262626
+# define col0       #1C1C1C
+# define col8       #444444
+# define col1       #AF5F5F
+# define col9       #FF8700
+# define col2       #5F875F
+# define col10      #87AF87
+# define col3       #87875F
+# define col11      #FFFFAF
+# define col4       #5F87AF
+# define col12      #8FAFD7
+# define col5       #5F5F87
+# define col13      #8787AF
+# define col6       #5F8787
+# define col14      #5FAFAF
+# define col7       #6C6C6C
+# define col15      #FFFFFF
+
+
+!! Solarized
+!# define fg         #657b83
+!# define bg         #262626
+!# define col0       #073642
+!# define col8       #fdf6e3
+!# define col1       #dc322f
+!# define col9       #cb4b16
+!# define col2       #859900
+!# define col10      #586e75
+!# define col3       #b58900
+!# define col11      #657b83
+!# define col4       #268bd2
+!# define col12      #839496
+!# define col5       #d33682
+!# define col13      #6c71c4
+!# define col6       #2aa198
+!# define col14      #93a1a1
+!# define col7       #eee8d5
+!# define col15      #fdf6e3
+
+
+
+!!export variables to other configs
+!#include "~/.config/i3status/config"
+
+!!set global colors
+
+*.foreground: fg
+*.background: bg
+*.cursorColor: cc
+
+! black
+*.color0: col0
+*.color8: col8
+
+! red
+*.color1: col1
+*.color9: col9
+
+! green
+*.color2: col2
+*.color10: col10
+
+! yellow
+*.color3: col3
+*.color11: col11
+
+! blue
+*.color4: col4
+*.color12: col12
+
+! magenta
+*.color5: col5
+*.color13: col13
+
+! cyan
+*.color6: col6
+*.color14: col14
+
+! white
+*.color7: col7
+*.color15: col15
+
+
+!! URxvt settings
+
+!!"[xx]#xxxxxx" for transparency --> compton
+!URxvt.background: [90]bg
+URxvt.geometry: 92x24
+URxvt.depth: 32
+URxvt.iso14755: false
+URxvt.internalBorder: 24
+URxvt.borderColor: bg
+URxvt*underlineColor:  col11
+URxvt*highlightColor: fg
+URxvt*highlightTextColor: bg
+
+URxvt.scrollBar: true
+URxvt.scrollBar_right: true
+URxvt.scrollstyle: plain
+URxvt.scrollBar_floating: true
+URxvt.scrollBar_align: centre
+URxvt*scrollTtyKeypress:  true
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt*scrollColor: [50]col2
+
+URxvt.saveLines: 2048
+URxvt.urgentOnBell: true
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: false
+URxvt*pointerBlank: false
+!URxvt*pointerColor: col2
+!URxvt*pointerColor2: col2
+
+!URxvt.font: xft:Hack:style=Regular:size=12
+!URxvt.boldFont: xft:Hack:style=Bold:size=12
+!URxvt.letterSpace: -2
+URxvt.lineSpace: 2
+URxvt*fading:  30
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! perls --->
+URxvt.perl-ext-common: default,matcher,resize-font
+
+!!matcher:
+URxvt.url-launcher: /usr/bin/brave
+URxvt.matcher.button: 1
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.colorUL: col11
+
+!!tabbed:
+URxvt.tabbed.tabbar-fg: 3
+URxvt.tabbed.tabbar-bg: -1
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: -1
+
+
+!!resize-font
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show
+!URxvt.resize-font.smaller: C-y
+!URxvt.resize-font.bigger: C-j
