@@ -195,21 +195,24 @@ bindsym Escape mode "default"
 }
 bindsym $mod+x mode "$mode_system"
 
+##############################
+### Autostart applications ###
+##############################
 
-# Autostart applications
-
-
-# compositor effects with compton allEffectsOn/NoShadows:
-# exec --no-startup-id compton &
-# exec with no shadow effect and as background-process
-exec --no-startup-id compton -CGb
+# compositor effects with picom allEffectsOn/NoShadows:
+# exec picom with no shadow effect and as background-process
+exec --no-startup-id picom -CGb
 
 # colors
 # set background:
 # hsetroot because of compton (normal is xsetroot)
 exec --no-startup-id hsetroot -solid "#141c21"
-#exec --no-startup-id feh --bf-scale ~/Pictures/nebula_BW.png
-exec --no-startup-id ~/.fehbg &
+exec --no-startup-id feh  --no-fehbg --bf-scale ~/Pictures/nebula_BW.png
+#exec --no-startup-id ~/.fehbg &
+
+##############
+### colors ###
+##############
 
 #load colors from Xresources
 exec --no-startup-id xrdb -merge ~/.Xresources
